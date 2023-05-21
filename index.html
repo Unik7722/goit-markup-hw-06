@@ -352,7 +352,7 @@
           <div class="logo-footer-text"> 
         <a href="./index.html" class="logo-footer link logo">Web<span class="logo-light">Studio</span></a>
         <p class="footer-text">
-          Increase the flow of customers and <br>sales for your business with digital <br>marketing & growth solutions.
+          Increase the flow of customers and sales for your business with digital marketing & growth solutions.
         </p>
       </div> 
        
@@ -396,10 +396,10 @@
       <p class="text-input">Subscribe</p>
       <form class="e-mail-form">
        <label for="e-mail_name"></label>
-       <input type="text" name="e-mail_text" placeholder="E-mail">
-       <button class="e-mail-btn" type="submit">Subscribe
-        <svg class="" width="24" height="24">
-          <use href=""></use>
+       <input class="mail-form" type="email" name="email" placeholder="E-mail">
+       <button class="e-mail-btn-text e-mail-btn" type="submit">Subscribe
+          <svg class="icons-btn-telegram" width="24" height="24">
+          <use href="./icons/telegram.svg"></use>
         </svg>
        </button>
       </div>
@@ -409,46 +409,51 @@
      <!-- Modal window -->
      <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-close-btn " type="button" data-modal-close>
+        <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#modal"></use>
           </svg>
         </button>
 
         <!-- Form -->
-        <p class="model-contacts">Leave your contacts and we will call you back</p>
-        <form name="model_form">
-                  
-        <label for="model_name">Name</label>
-          <div>
-            <input class="" type="text" name="model_name" id="model_name">
-            <svg class="" width="12" height="12">
-              <use href=""></use>
+        <strong class="model-title">Leave your contacts and we will call you back</strong>
+        <form class="model" name="model_form">
+            <label class="form-label" for="model_name">Name</label>
+            <div class="form-wrapper">
+            <input class="form-field" type="text" name="name" id="model_name">
+            <svg class="form-icon" width="12" height="12">
+              <use href="./images/icons.svg#person"></use>
             </svg>
           </div>
-          <label for="model_phone">Phone</label>
-          <div>
-            <input class="" type="text" name="model_phone" id="model_phone">
-            <svg class="" width="13" height="13">
-              <use href=""></use>
+          
+          <label class="form-label" for="model_phone">Phone</label>
+          <div class="form-wrapper">
+            <input class="form-field" type="tel" name="phone_number" id="model_phone">
+            <svg class="form-icon" width="13" height="13">
+              <use href="./images/icons.svg#phone"></use>
             </svg>
           </div>
-          <label for="model_email">Email</label>
-          <div>
-            <input class="" type="text" name="model_email" id="model_email">
-            <svg class="" width="15" height="12">
-              <use href=""></use>
+          
+          <label class="form-label"  for="model_email">Email</label>
+          <div class="form-wrapper">
+            <input class="form-field" type="email" name="email" id="model_email">
+            <svg class="form-icon" width="15" height="12">
+              <use href="./images/icons.svg#email"></use>
             </svg>
           </div>
-          <label for="model_comment">Comment</label>
-          <textarea name="model_comment" id="model_comment" rows="5" placeholder="Text input"></textarea>
-         <label>
+          <div class="">
+          <label class="form-label" for="model_comment">Comment</label>
+          <textarea class="form-comment" name="model_comment" id="model_comment" rows="5" placeholder="Text input"></textarea>
+        </div>
+        <div></div>
+          <label>
           <input type="checkbox" name="model_agreement">
-          <span>I accept the terms and conditions of the <a href=""> Privacy Policy</a></span>
+          <span>I accept the terms and conditions of the <a class="checkbox-terms" href=""> Privacy Policy</a></span>
          </label>
-
          <button class="form-btn" type="submit">Send</button>      
+        </div>
         </form>
+
       </div>
      </div>
 
