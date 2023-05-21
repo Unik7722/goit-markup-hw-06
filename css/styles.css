@@ -898,11 +898,17 @@ border: 1px solid;
 border-radius: 4px;
 border-color: rgba(46, 47, 66, 0.4);
 
+outline: transparent;
+outline-offset: -1px;
+
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-icon{
  position: absolute;
- pointer-events: none; 
+ top: 50%;
+ left: 50%;
+ 
+ transform: translate(-50%);
 
  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
