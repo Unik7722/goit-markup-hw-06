@@ -914,21 +914,20 @@ outline-offset: -1px;
 
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-field:focus{
-  outline: var(--logo-lite);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   
-  }
+
 
 .form-icon{
  position: absolute;
  top: 50%;
  left: 5%;
+ 
  transform:translateY(-50%);
  
 }
-.form-field:focus + .form-icon{
+.form-field:focus+.form-icon{
   fill: var(--logo-lite);
+  
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
 
  .model-title{
