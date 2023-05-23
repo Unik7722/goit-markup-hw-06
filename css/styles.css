@@ -632,7 +632,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   .mail-form{
   background-color: transparent;
   padding-left: 16px;  
-  box-shadow: 0px, 4px rgba(0, 0, 0, 0.15);
+  
   border-color: var(--color-white);
   border-radius: 4px;  
   width: 264px;
@@ -642,19 +642,28 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
    .mail-form:hover,
    .mail-form:focus{
-  border-color: var(--social-link-bkg);
+    box-shadow: 0px, 4px rgba(0, 0, 0, 0.15);
    }
-   
+   .mail-form::placeholder{
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04px;
+    color: var(--white-color);
+   } 
   .mail-text{
    display: block;
    
   } 
   .e-mail-btn{
-    display: block;
+    display:flex;
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;
     width:  165px;
     height: 40px;
+    padding-left: 24px;
     margin-left: 24px;
-    padding-bottom: 8px; 
+    gap: 16px;
     font-family:'Roboto';
     font-size: 16px;
     font-weight: 500;
@@ -951,10 +960,10 @@ display: block;
 width: 100%;
 height: 120px;
 resize: none;
-padding-top: 8px;
+padding-top: 11px;
 padding-left: 16px;
+margin-bottom: 16px;
 border: 1px solid;
-
 border-color: rgba(46, 47, 66, 0.4);
 
 font-family: "Roboto", sans-serif;
@@ -971,9 +980,52 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
  border: 1px solid var(--logo-lite);
  outline: none;
 }
+.form-comment::placeholder{
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04px;
+ }
+ .checkbox-text{
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding-left: 8px;
+ }
 
+ .checkbox-icon-text{
+  display: flex;
+   margin-bottom: 24px;
+    }
 .checkbox-terms{
   color: #4D5AE5;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.checkbox-icon{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  
+}
+.checkbox-input{
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  
+}
+.checkbox-input:checked+.checkbox-icon{
+  border-color: #4D5AE5;
+  background-color: #4D5AE5;
+  background-image: url(../images/checkclick.svg);
+  background-size: contain;
+  background-origin: border-box;
 }
 .form-btn{
   display: block;

@@ -392,20 +392,18 @@
       </div>
 
       <!-- e-mail input -->
-      <div class="form-input">
+    <div class="form-input">
       <p class="text-input">Subscribe</p>
       <form class="e-mail-form">
-        
        <label class="mail-text"  for="e-mail_name"></label>
        <input class="mail-form" type="email" name="email" placeholder="E-mail">
-       <button class="e-mail-btn" type="submit">Subscribe
+         <button class="e-mail-btn" type="submit">Subscribe
           <svg class="icons-btn-telegram" width="24" height="24">
           <use href="./images/icons.svg#airframe"></use>
         </svg>
        </button>
-      
-      </div>
       </form>
+    </div>
       </div>
       </footer>
      <!-- Modal window -->
@@ -447,11 +445,14 @@
           <label class="form-label" for="model_comment">Comment</label>
           <textarea class="form-comment" name="model_comment" id="model_comment" rows="5" placeholder="Text input"></textarea>
         </div>
-        <div></div>
-          <label>
-          <input type="checkbox" name="model_agreement">
-          <span>I accept the terms and conditions of the <a class="checkbox-terms" href=""> Privacy Policy</a></span>
-         </label>
+        <div>
+          <label class="checkbox" for="checkbox_click">
+          <input class="checkbox-input" type="checkbox" name="model_agreement" id="checkbox_click">
+        <div class="checkbox-icon-text">
+          <span class="checkbox-icon"></span>
+          <span class="checkbox-text">I accept the terms and conditions of the <a class="checkbox-terms" href=""> Privacy Policy</a></span>
+        </div>
+        </label>         
          <button class="form-btn" type="submit">Send</button>      
         </div>
         </form>
